@@ -1,0 +1,29 @@
+{
+  "name": "astound-test-middle",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": "^3.0.0"
+  },
+  "scripts": {
+    "prebuild": "npm install",
+    "start": "serve app/",
+    "lint": "eslint app/**/*.js"
+  },
+  "dependencies": {
+    "eslint": "^4.19.1",
+    "serve": "^6.5.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.11.0",
+    "sass-lint": "^1.12.1"
+  }
+}

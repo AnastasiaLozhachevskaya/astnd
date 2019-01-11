@@ -1,0 +1,53 @@
+@import '../base/vars';
+
+.btn {
+  background: $light-green;
+  border: 0;
+  border-radius: 22px;
+  color: $primary-black;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .05em;
+  min-width: 214px;
+  padding: 12px 20px 13px;
+  text-transform: uppercase;
+  transition: border .4s, background .4s, color .4s;
+  vertical-align: top;
+
+  &:hover {
+    background: $primary-black;
+    color: $light-green;
+  }
+}
+
+.btn-close {
+  display: inline-block;
+  height: 28px;
+  position: relative;
+  transition: transform .4s;
+  width: 28px;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+
+  &::before,
+  &::after {
+    background: $blue;
+    content: '';
+    height: 34px;
+    left: 11px;
+    position: absolute;
+    top: -3px;
+    width: 6px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

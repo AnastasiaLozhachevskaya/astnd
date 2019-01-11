@@ -1,0 +1,21 @@
+@import '../base/mixins';
+
+.product-image {
+  margin-top: -40px;
+
+  &__image {
+    width: 100%;
+  }
+}
+
+@include tablet {
+  .product-image {
+    margin-top: 0;
+  }
+}
+
+@include mobile {
+  .product-image {
+    margin: 0 -30px 10px;
+  }
+}

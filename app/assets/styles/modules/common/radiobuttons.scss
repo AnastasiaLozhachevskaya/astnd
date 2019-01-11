@@ -1,0 +1,53 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+.radio {
+  margin-right: 10px;
+  position: relative;
+
+  &__input {
+    left: -9999px;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+
+    &:checked ~ .radio__label {
+      box-shadow: $shadow;
+    }
+  }
+
+  &__label {
+    align-items: center;
+    border: 1px solid $light-grey;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-family: $oswald;
+    font-size: 10px;
+    font-weight: bold;
+    height: 38px;
+    justify-content: center;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    transition: box-shadow .4s;
+    width: 38px;
+  }
+
+  &--color {
+    .radio__label {
+      border-color: transparent;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+@include mobile {
+  .radio {
+    &__label,
+    &--color .radio__label{
+      height: 30px;
+      width: 30px;
+    }
+  }
+}

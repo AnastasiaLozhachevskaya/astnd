@@ -1,0 +1,72 @@
+[class^='ico-'] {
+  background-image: url('../images/sprite.png');
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ico-star-red {
+  background-position: -61px -33px;
+  height: 18px;
+  width: 18px;
+}
+
+.ico-star-grey {
+  background-position: -61px -5px;
+  height: 18px;
+  width: 18px;
+}
+
+.ico-facebook {
+  background-position: -89px -5px;
+  height: 16px;
+  width: 8px;
+}
+
+.ico-facebook-white {
+  background-position: -89px -31px;
+  height: 16px;
+  width: 8px;
+}
+
+.ico-pinterest {
+  background-position: -5px -34px;
+  height: 21px;
+  width: 16px;
+}
+
+.ico-pinterest-white {
+  background-position: -31px -34px;
+  height: 21px;
+  width: 16px;
+}
+
+.ico-twitter {
+  background-position: -5px -65px;
+  height: 13px;
+  width: 17px;
+}
+
+.ico-twitter-white {
+  background-position: -32px -65px;
+  height: 13px;
+  width: 17px;
+}
+
+.ico-youtube {
+  background-position: -5px -5px;
+  height: 19px;
+  width: 18px;
+}
+
+.ico-youtube-white {
+  background-position: -33px -5px;
+  height: 19px;
+  width: 18px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  [class^='ico-'] {
+    background-image: url('../images/sprite@2x.png');
+    background-size: 102px 83px;
+  }
+}

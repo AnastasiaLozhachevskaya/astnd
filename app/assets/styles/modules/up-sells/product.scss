@@ -1,0 +1,53 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+.product {
+  color: inherit;
+  display: block;
+
+  &__link {
+    display: block;
+    transition: box-shadow .4s;
+
+    &:hover {
+      box-shadow: $shadow;
+    }
+  }
+
+  &__bar {
+    font-weight: bold;
+    letter-spacing: .05em;
+    padding: 10px 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  & img {
+    width: 100%;
+  }
+}
+
+@include tablet {
+  .product {
+    &__bar {
+      font-size: 16px;
+      padding: 13px 5px;
+    }
+  }
+}
+
+@include mobile {
+  .product {
+    display: inline-block;
+    font-size: 14px;
+    max-width: none;
+    padding: 0;
+    vertical-align: top;
+    white-space: normal;
+    width: 100%;
+
+    &__bar {
+      padding: 10px 5px;
+    }
+  }
+}

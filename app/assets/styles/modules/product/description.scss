@@ -1,0 +1,39 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+.description {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: .03px;
+  line-height: 1.4;
+
+  &__title {
+    color: $primary-black;
+    display: none;
+    font-family: $open-sans;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .06em;
+    margin-bottom: 10px;
+  }
+}
+
+@include tablet {
+  .description {
+    &__title {
+      display: block;
+    }
+  }
+}
+
+@include mobile {
+  .description {
+    font-size: 14px;
+    letter-spacing: .04px;
+    line-height: 1.45;
+
+    &__title {
+      display: none;
+    }
+  }
+}

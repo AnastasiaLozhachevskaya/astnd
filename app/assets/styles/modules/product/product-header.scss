@@ -1,0 +1,13 @@
+@import '../base/mixins';
+
+@include tablet {
+  .product-header {
+    &__spacer {
+      display: none;
+    }
+
+    &__title {
+      padding-left: 0;
+    }
+  }
+}

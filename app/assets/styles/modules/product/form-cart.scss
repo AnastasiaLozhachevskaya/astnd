@@ -1,0 +1,56 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+.form-cart {
+  &__row {
+    display: flex;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    color: $primary-black;
+    flex: 0 0 72px;
+    font-weight: bold;
+    letter-spacing: .06em;
+    max-width: 72px;
+    padding-top: 11px;
+    text-transform: uppercase;
+
+    & span {
+      display: none;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    flex: 0 1 100%;
+  }
+}
+
+@include mobile {
+  .form-cart {
+    &__row {
+      flex-direction: column;
+    }
+
+    &__label {
+      flex-basis: auto;
+      margin-bottom: 15px;
+      max-width: 100%;
+
+      & span {
+        display: inline-block;
+      }
+    }
+
+    &__btn {
+      align-self: center;
+      margin-top: 10px;
+      min-width: 88%;
+    }
+  }
+}

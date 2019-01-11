@@ -1,0 +1,25 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+.price {
+  display: flex;
+
+  &__value {
+    color: $red;
+    font-size: 24px;
+    margin-right: 25px;
+
+    &--old {
+      color: $primary-black;
+      text-decoration: line-through;
+    }
+  }
+}
+
+@include tablet {
+  .price {
+    &__value {
+      font-size: 36px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+.btn-arrow {
+  display: inline-block;
+  height: 50px;
+  position: relative;
+  width: 28px;
+
+  &::before {
+    border: 5px solid $grey;
+    content: '';
+    height: 30px;
+    left: 7px;
+    position: absolute;
+    top: 8px;
+    transform: rotate(45deg);
+    width: 30px;
+  }
+
+  &--prev {
+    &::before {
+      border-right: 0;
+      border-top: 0;
+    }
+  }
+
+  &--next {
+    &::before {
+      border-bottom: 0;
+      border-left: 0;
+      left: -14px;
+    }
+  }
+}
+
+@include mobile {
+  .btn-arrow {
+    padding-top: 86%;
+    position: absolute;
+    top: 0;
+
+    &::before {
+      margin-top: -25px;
+      top: 50%;
+    }
+
+    &--prev {
+      left: -21px;
+    }
+
+    &--next {
+      right: -12px;
+    }
+  }
+}
